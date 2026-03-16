@@ -153,7 +153,7 @@ export default function Home() {
         reader.readAsDataURL(file);
         const data = await base64Promise;
         
-        setPendingImages(prev => [...prev, { data, mediaType: file.type }]);
+        setPendingImages(prev => [...prev, { data, mediaType: file.type as any }]);
       }
     } catch (err) {
       setError('Failed to process image. Please try again.');

@@ -1,4 +1,4 @@
-export type MediaType = 'image/png' | 'image/jpeg' | 'image/webp';
+export type MediaType = 'image/png' | 'image/jpeg' | 'image/jpg' | 'image/webp';
 export type ChatMode = 'code' | 'essay';
 
 export interface ChatImage {
