@@ -551,7 +551,14 @@ export default function Home() {
               </button>
             </div>
             {/* Hidden Inputs */}
-            <input type="file" ref={cameraInputRef} style={{ display: 'none' }} accept="image/*" capture="environment" onChange={e => handleFileUpload(e, true)} />
+            <input 
+              type="file" 
+              ref={cameraInputRef} 
+              style={{ position: 'absolute', opacity: 0, width: 0, height: 0, zIndex: -1 }} 
+              accept="image/*" 
+              capture="environment" 
+              onChange={e => handleFileUpload(e, true)} 
+            />
           </div>
         </div>
       </div>
